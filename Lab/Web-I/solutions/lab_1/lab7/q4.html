@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q4</title>
+	
+</head>
+<body>
+	<form>
+		<label>
+			Enter your Name:<input type="text" id="name" name="fname"><br><br>
+		</label>
+		<label>
+			Enter your age:<input type="text" id="age" name="sname"><br>
+		</label>
+		<button onclick="checkForVote()">Submit</button>
+	</form>
+	<script type="text/javascript">
+		function checkForVote() {
+                var name = document.getElementById("name").value;
+                var age = document.getElementById("age").value;
+                if (age >= 18) {
+                    alert(name + ", you are eligible to vote!");
+                } else {
+                    alert(name + ", you are not eligible to vote.");
+                }
+            }
+	</script>
+</body>
+</html>

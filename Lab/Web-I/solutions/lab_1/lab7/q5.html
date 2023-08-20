@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q5</title>
+</head>
+ <body>
+        <h1>js program to print sum of array</h1>
+
+        <p id="demo"></p>
+
+        <script>
+            var array = [], i;
+
+            for (i = 0; i < 5; i++) {
+                array[i] = prompt("Enter a number:");
+            }
+
+            let sum = 0;
+
+            for (var i = 0; i < 5; i++) {
+                sum += parseInt(array[i]);
+            }
+
+            document.getElementById("demo").innerHTML = "The sum is: " + sum;
+        </script>
+    </body>
+</html>
